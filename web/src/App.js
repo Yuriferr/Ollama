@@ -35,20 +35,14 @@ function App() {
               </div>
             ))}
           </div>
-          <div className="input-group mt-3">
+          <div className="input-group">
             <input
               type="text"
-              className="form-control"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              onKeyPress={(e) => e.key === 'Enter' && sendMessage()}
-              placeholder="Type a message..."
+              placeholder="Type your message..."
             />
-            <div className="input-group-append">
-              <button className="btn btn-primary" onClick={sendMessage}>
-                Send
-              </button>
-            </div>
+            <button onClick={sendMessage}>Send</button>
           </div>
         </div>
       </div>
