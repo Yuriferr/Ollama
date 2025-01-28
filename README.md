@@ -51,3 +51,38 @@ O servidor da API estará rodando em http://localhost:3001.
 3. Inicie a aplicação React:
     ```sh
    npm start
+
+A aplicação web estará rodando em http://localhost:5173.
+
+### Uso
+
+1. Abra a aplicação web em http://localhost:5173.
+2. Digite uma mensagem na caixa de entrada e clique em "Send".
+3. A mensagem será enviada para a API, que se comunicará com o modelo de IA Ollama.
+4. A resposta da IA será exibida na interface da aplicação web.
+
+# Dependências
+
+### API
+
+- axios: ^1.7.9
+- body-parser: ^1.20.3
+- cors: ^2.8.5
+- express: ^4.21.2
+- nodemon: ^2.0.22 (devDependency)
+
+### WEB
+
+- axios: ^1.7.9
+- bootstrap: ^5.3.3
+- cra-template: 1.2.0
+- react: ^19.0.0
+- react-dom: ^19.0.0
+- react-scripts: 5.0.1
+- web-vitals: ^4.2.4
+
+### Licença
+
+Este projeto está licenciado sob a licença ISC.
+
+Link para baixar o Ollma: https://ollama.com.
