@@ -25,6 +25,29 @@ O projeto está dividido em duas partes principais:
 ### API
 
 1. Navegue até a pasta `api`:
-   ```sh
+    ```sh
    cd api
-    
+
+2. Instale as dependências:
+    ```sh
+   npm install
+
+3. Inicie o servidor:
+    ```sh
+   npm start
+
+O servidor da API estará rodando em http://localhost:3001.
+
+### WEB
+
+1. Navegue até a pasta `web`:
+    ```sh
+   cd web
+
+2. Instale a aplicação React:
+    ```sh
+   npm install
+
+3. Inicie a aplicação React:
+    ```sh
+   npm start
