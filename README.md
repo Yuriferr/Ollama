@@ -19,7 +19,7 @@ O projeto está dividido em duas partes principais:
 
 ### Baixar e Instalar Ollama
 
-1. Acesse o [link para baixar Ollama](https://example.com/download-ollama) e siga as instruções para instalar o Ollama na sua máquina.
+1. Acesse o [link para baixar Ollama](https://ollama.com) e siga as instruções para instalar o Ollama na sua máquina.
 2. Certifique-se de que o Ollama está rodando na porta `11434`.
 
 ### API
@@ -84,5 +84,3 @@ A aplicação web estará rodando em http://localhost:5173.
 ### Licença
 
 Este projeto está licenciado sob a licença ISC.
-
-Link para baixar o Ollma: https://ollama.com.
