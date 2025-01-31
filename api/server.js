@@ -15,12 +15,13 @@ app.post('/api/chat', async (req, res) => {
 
   // Adiciona a nova mensagem do usuário ao histórico
   conversation.push({ role: 'user', content: userMessage });
-  
+
   try {
     const response = await axios.post('http://localhost:11434/api/chat', {
       model: 'llama3.2',
       messages: conversation,
       stream: false,
+      prompt: 'Responda de forma direta e concisa:'
     });
 
     const botReply = response.data.message.content;
