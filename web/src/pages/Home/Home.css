@@ -1,0 +1,146 @@
+/* Estilos principais */
+.Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #222831;
+    padding: 30px;
+}
+
+
+/* Estilos do rodapé */
+header {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+}
+
+header div{
+    display: flex;
+    gap: 10px;
+}
+
+header div a {
+    color: #4D6BFE;
+    text-decoration: none;
+}
+
+header div a:hover {
+    text-decoration: underline;
+}
+
+/* Caixa de chat */
+.chat-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #393e46;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 20px;
+    overflow-y: auto;
+}
+
+/* Mensagens do usuário */
+.message.user {
+    max-width: 70%;
+    background-image: linear-gradient(to top left, #4D6BFE 0%, #4d6afe9d 100%);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    align-self: flex-end;
+}
+
+/* Mensagens do assistente */
+.message.assistant {
+    max-width: 100%;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    align-self: flex-start;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+    line-height: 1.5;
+}
+
+/* Caixa de entrada */
+.input-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box input {
+    width: 80%;
+    height: 40px;
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.input-box button {
+    width: 20%;
+    height: 40px;
+    border-radius: 0 10px 10px 0;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #4D6BFE;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Tela de carregamento */
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #008CDC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Animação de digitação */
+.typing-animation {
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 2.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 45% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
