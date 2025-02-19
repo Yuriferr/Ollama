@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { IoSend } from "react-icons/io5";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import ClipLoader from "react-spinners/ClipLoader";
 import "./Home.css";
 
 export default function Home() {
@@ -83,11 +84,10 @@ export default function Home() {
           <IoSend />
         </button>
       </form>
-      
 
       {loading && (
         <div className="loading">
-          <img src="/images/loading.gif" alt="loading..." />
+          <ClipLoader color="white" loading={loading} size={150} />
           <p className="typing-animation">
             Ola, seja bem vindo ao meu chatbot, como posso ajudar?
           </p>
